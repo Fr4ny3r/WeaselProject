@@ -142,3 +142,19 @@ nav {
   width: 100vw;
   height: 86px;
 }
+
+
+footer {
+  background-color: var(--back-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
