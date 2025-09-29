@@ -137,16 +137,16 @@ const Particles: React.FC<ParticlesProps> = ({
     window.addEventListener('resize', resize, false);
     resize();
 
-    const handleMouseMove = (e: MouseEvent) => {
-      const rect = container.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-      const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
-      mouseRef.current = { x, y };
-    };
+  //  const handleMouseMove = (e: MouseEvent) => {
+  //    const rect = container.getBoundingClientRect();
+  //    const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  //    const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
+  //    mouseRef.current = { x, y };
+  //  };
 
-    if (moveParticlesOnHover) {
-      //container.addEventListener('mousemove', handleMouseMove);
-    }
+  //  if (moveParticlesOnHover) {
+  //    container.addEventListener('mousemove', handleMouseMove);
+  //  }
 
     const count = particleCount;
     const positions = new Float32Array(count * 3);
@@ -224,9 +224,9 @@ const Particles: React.FC<ParticlesProps> = ({
 
     return () => {
       window.removeEventListener('resize', resize);
-      if (moveParticlesOnHover) {
-        //container.removeEventListener('mousemove', handleMouseMove);
-      }
+  //    if (moveParticlesOnHover) {
+  //      container.removeEventListener('mousemove', handleMouseMove);
+  //    }
       cancelAnimationFrame(animationFrameId);
       if (container.contains(gl.canvas)) {
         container.removeChild(gl.canvas);
