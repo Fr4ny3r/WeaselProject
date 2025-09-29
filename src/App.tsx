@@ -3,8 +3,11 @@ import CardNav from './CardNav'
 import logo from '/logo.png';
 import TiltedCard from './TiltedCard';
 import TextType from './TextType';
+import Particles from './Particles';
+
 
 function App() {
+
 
     const items = [
     {
@@ -61,11 +64,29 @@ function App() {
           showCursor={true}
           cursorCharacter="|"
         />
+      <div style={{ width: '100%', height: '80dvh', position: 'absolute', top: 0, left: 0}}>
+        <Particles
+          particleColors={['#abd1c6', '#abd1c6']}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={true}
+          disableRotation={false}
+        />
+      </div>
       </div>
       <div className='head-elements'>
-        <span className='f1'></span>
-        <span className='f2'></span>
-        <span className='f3'></span>
+        <span className='f1 img-span-f'>
+          <img src="https://images.unsplash.com/photo-1758796187056-c612aa28d19a?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </span>
+        <span className='f2 img-span-f'>
+          <img src="https://images.unsplash.com/photo-1756727526787-b113e5c6d865?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </span>
+        <span className='f3 img-span-f'>
+          <img src="https://images.unsplash.com/photo-1758754169722-620d36fcb76b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </span>
       </div>
     </header>
     <main>
@@ -217,6 +238,8 @@ function App() {
           </div>
         </div>
       </section>
+    </main>
+    <main>
     </main>
     <footer>
       <p>&copy; 2024 Weasel Project. All rights reserved.</p>
