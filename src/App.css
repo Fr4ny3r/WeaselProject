@@ -134,6 +134,61 @@ main {
     flex-wrap: wrap;
   }
 
+  .info-section {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #abd1c6;
+    padding: 4rem;
+    color: black;
+    width: 100vw;
+  }
+
+
+  .info-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .info-card {
+    text-align: left;
+    color: #e8e4e6;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid #abd1c6;
+    background-color: var(--back-color);
+
+    & h2 {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      text-align: left;
+
+    }
+
+    & p {
+      max-width: 400px;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding: 1rem;
+    }
+
+    &:hover {
+      scale: 1.03;
+      cursor: pointer;
+      transition: scale 0.3s ease, color 0.2s ease;
+    }
+
+  }
+
 nav {
   background-color: #00fff2;
   top: 0px;

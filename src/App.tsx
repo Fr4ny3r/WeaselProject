@@ -3,8 +3,6 @@ import CardNav from './CardNav'
 import logo from '/logo.png';
 import TiltedCard from './TiltedCard';
 import TextType from './TextType';
- 
-
 
 function App() {
 
@@ -52,6 +50,7 @@ function App() {
       buttonTextColor="#001e1d"
       ease="power3.out"
     />
+    
     <header>
       <div className='title-box'>
         <h1>Weasel Project</h1>
@@ -200,7 +199,25 @@ function App() {
         </div>
       </section>
     </main>
-
+    <main>
+      <section className='main-section info-section'>
+        <h1>Why Choose Weasel Project?</h1>
+        <div className='info-cards-container'>
+          <div className='info-card'>
+            <h2>Authentic Experiences</h2>
+            <p className='p-desc'>We prioritize authenticity in every destination we feature. Our team carefully selects locations that offer genuine cultural experiences, allowing you to connect with local communities and traditions.</p>
+          </div>
+          <div className='info-card'>
+            <h2>Affordable Travel</h2>
+            <p className='p-desc'>Traveling doesn't have to break the bank. The Weasel Project is committed to providing affordable travel options without compromising on quality. Discover budget-friendly destinations that offer incredible value for your money.</p>
+          </div>
+          <div className='info-card'>
+            <h2>Diverse Destinations</h2>
+            <p className='p-desc'>From bustling cities to serene countrysides, our selection of destinations caters to all types of travelers. Whether you're looking for adventure, relaxation, or cultural immersion, the Weasel Project has something for everyone.</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <p>&copy; 2024 Weasel Project. All rights reserved.</p>
     </footer>
